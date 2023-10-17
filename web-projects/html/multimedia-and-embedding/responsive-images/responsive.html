@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive HTML images demo</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus debitis veniam obcaecati odio
+                dolorum, optio consequuntur reprehenderit aliquid vero repudiandae eum officia, iusto, qui commodi porro
+                voluptate eveniet vitae?
+            </p>
+            <picture>
+                <source media="(max-width: 799px)" srcset="images/elva-480w-close-portrait.jpg">
+                <source media="(min-width: 800px)" srcset="images/elva-800w.jpg">
+                <img src="images/elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+            </picture>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A autem ad nihil libero esse ex molestias
+                totam tenetur, nemo culpa. Nobis reprehenderit aut nemo iure corporis! Illum cumque reiciendis id!
+            </p>
+            <img 
+                srcset="images/elva-fairy-480w.jpg 480w, images/elva-fairy-800w.jpg 800w"
+                sizes="(max-width:600px) 480px, 800px" 
+                src="elva-fairy-800w.jpg" 
+                alt="Elva dressed as a fairy"
+            >
+            <p>Header image originally by <a href="https://www.flickr.com/photos/miwok/17086751527/">Miwok</a>.</p>
+        </section>
+    </main>
+</body>
+
+</html>
